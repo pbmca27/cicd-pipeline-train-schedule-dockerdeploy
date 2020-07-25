@@ -42,6 +42,7 @@ pipeline {
                 input 'Deploy to Production?'
                 milestone(1)
                 withCredentials([usernamePassword(credentialsId: 'webserver_login', usernameVariable: 'USERNAME', passwordVariable: 'USERPASS')]) {
+                    echo 'Username $USERNAME Password: $USERPASS Production IP: $prod_ip'
                     script {
                         sh "sshpass -p '$USERPASS' -v ssh -o StrictHostKeyChecking=no $USERNAME@$prod_ip \"docker pull pbmca27/train-schedule:${env.BUILD_NUMBER}\""
                         try {
