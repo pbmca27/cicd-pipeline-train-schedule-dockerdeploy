@@ -15,15 +15,4 @@ You can run the app with:
 Once it is running, you can access it in a browser at http://localhost:8080
 
 My project - try 01
-My project - try 02
-My project - try 03
-My project - try 04
-My project - try 05 - success
-My project - try 06
-My project - try 07
-My project - try 08
-My project - try 09
-My project - try 10
-My project - try 11
-My project - try 12
-My project - try 13
+
